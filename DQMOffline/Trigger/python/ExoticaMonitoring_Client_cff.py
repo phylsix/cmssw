@@ -209,6 +209,7 @@ DisplacedJet_jetRatioHemHep17 = DQMEDHarvester("DQMGenericClient",
 
 exoticaClient = cms.Sequence(
     NoBPTXEfficiency
+  + DiDispStaMuonEfficiency
   + photonEfficiency
   + DisplacedJet_htEfficiency
   + (DisplacedJet_jetEfficiency*DisplacedJet_jetRatioHemHep17)
